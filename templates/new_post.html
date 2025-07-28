@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Post - Sakshi's Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a New Blog Post</h1>
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="text" name="title" placeholder="Post Title" required>
+        <input type="text" name="author" placeholder="Author Name" required>
+        <label for="content"><strong>Post Content</strong></label>
+        <p style="font-size: 14px; color: gray;">✍️ Feel free to write anything: stories, tech tips, life experiences, etc.</p>
+
+<textarea name="content" rows="8" placeholder="Write something interesting! 
+You can share:
+- Your thoughts or opinions
+- Coding tips or tutorials
+- A travel or life experience
+- Motivation or daily learnings
+- Any short story or poem..."></textarea>
+
+        <input type="file" name="image">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
